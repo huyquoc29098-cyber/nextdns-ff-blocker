@@ -1,0 +1,37 @@
+# NextDNS Blocklist - Free Fire Server IPs
+# IP ranges để chặn Free Fire server Việt Nam & Southeast Asia
+
+# Garena Southeast Asia IP Ranges
+202.81.96.0/22
+202.81.112.0/22
+202.81.99.0/24
+202.81.117.0/24
+202.81.118.0/24
+202.81.123.0/24
+148.222.66.0/24
+
+# Garena Vietnam & Regional
+143.92.120.0/22
+125.212.198.39
+
+# Garena Singapore (Primary SEA Hub)
+103.247.205.138
+
+# Additional Garena Infrastructure
+202.81.100.0/24
+202.81.101.0/24
+202.81.102.0/24
+202.81.103.0/24
+202.81.104.0/24
+202.81.105.0/24
+202.81.106.0/24
+202.81.107.0/24
+
+# Cloudflare & Akamai CDN (partial - thường dùng cho FF)
+# Lưu ý: Chặn toàn bộ CDN sẽ ảnh hưởng đến nhiều website khác
+# 173.245.48.0/20
+# 103.21.244.0/22
+# 103.22.200.0/22
+
+# Viettel Vietnam (ISP local FF servers)
+125.212.0.0/16

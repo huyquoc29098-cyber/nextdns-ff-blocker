@@ -1,0 +1,50 @@
+# NextDNS Blocklist - Free Fire Vietnam
+# Domains để chặn Free Fire server Việt Nam
+# Format: domain hoặc *.domain
+
+# Free Fire Primary Domains
+freefiremobile.com
+www.freefiremobile.com
+ff.garena.com
+freefireind.in
+freefire.garena.com
+
+# Garena Subdomains
+*.garena.com
+garena.com
+api.garena.com
+auth.garena.com
+login.garena.com
+data.garena.com
+config.garena.com
+
+# CDN Domains
+*.akamaized.net
+*.cloudflare.net
+*.swiftserve.com
+
+# Analytics & Tracking
+analytics.garena.com
+tracker.garena.com
+events.garena.com
+
+# Update & Download Servers
+download.garena.com
+patch.garena.com
+update.garena.com
+cdn.garena.com
+
+# Vietnam Regional Servers
+vn.garena.com
+vn-*.garena.com
+sg.garena.com
+
+# Social & Account
+account.garena.com
+social.garena.com
+webapi.garena.com
+
+# Payment & Store
+pay.garena.com
+store.garena.com
+billing.garena.com

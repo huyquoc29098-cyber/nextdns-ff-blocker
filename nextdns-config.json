@@ -1,0 +1,111 @@
+{
+  "name": "Free Fire Vietnam Blocker",
+  "description": "Configuration to block Free Fire Vietnam servers",
+  "version": "1.0.0",
+  "created": "2026-09-09",
+  
+  "blocklists": {
+    "domains": {
+      "enabled": true,
+      "description": "Block Free Fire domains",
+      "items": [
+        "freefiremobile.com",
+        "ff.garena.com",
+        "freefireind.in",
+        "*.garena.com",
+        "*.akamaized.net",
+        "api.garena.com",
+        "auth.garena.com",
+        "login.garena.com",
+        "data.garena.com",
+        "config.garena.com",
+        "analytics.garena.com",
+        "download.garena.com",
+        "patch.garena.com",
+        "update.garena.com",
+        "cdn.garena.com",
+        "vn.garena.com",
+        "account.garena.com",
+        "social.garena.com",
+        "webapi.garena.com",
+        "pay.garena.com",
+        "store.garena.com"
+      ]
+    },
+    
+    "ip_ranges": {
+      "enabled": true,
+      "description": "Block Garena server IP ranges",
+      "items": [
+        "202.81.96.0/22",
+        "202.81.112.0/22",
+        "202.81.99.0/24",
+        "202.81.117.0/24",
+        "202.81.118.0/24",
+        "202.81.123.0/24",
+        "148.222.66.0/24",
+        "143.92.120.0/22",
+        "125.212.198.39/32",
+        "103.247.205.138/32"
+      ]
+    }
+  },
+
+  "rules": {
+    "dns_filtering": {
+      "enabled": true,
+      "block_type": "NXDOMAIN",
+      "log_blocked_queries": true,
+      "allow_exceptions": false
+    },
+
+    "ip_filtering": {
+      "enabled": true,
+      "block_type": "DROP",
+      "direction": "both"
+    },
+
+    "protocols": {
+      "block_http": true,
+      "block_https": true,
+      "block_dns": true,
+      "block_udp": true,
+      "block_tcp": true
+    }
+  },
+
+  "whitelist_exceptions": [
+    "github.com",
+    "google.com",
+    "cloudflare.com"
+  ],
+
+  "schedule": {
+    "enabled": false,
+    "timezone": "Asia/Ho_Chi_Minh",
+    "time_range": "00:00-23:59",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  },
+
+  "logging": {
+    "enabled": true,
+    "log_level": "INFO",
+    "log_blocked_domains": true,
+    "log_blocked_ips": true,
+    "log_file": "/var/log/nextdns-ff-blocker.log"
+  },
+
+  "notifications": {
+    "enabled": true,
+    "on_block": true,
+    "email": "admin@example.com"
+  }
+}
